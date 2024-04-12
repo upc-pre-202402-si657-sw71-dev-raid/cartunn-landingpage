@@ -1,0 +1,123 @@
+body {
+  font-family: "Roboto";
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem 12rem;
+}
+
+header .navbar {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+header .checkbtn {
+  font-size: 2rem;
+  color: #a6a6a6;
+  display: none;
+}
+
+header #check {
+  display: none;
+}
+
+header .navbar a {
+  text-decoration: none;
+  color: black;
+}
+
+header .navbar a:hover {
+  color: #8b8b8b;
+  transition: 0.5s;
+}
+
+header button {
+  width: 100%;
+  max-width: 7rem;
+  background-color: white;
+  color: #5766f5;
+  border: 1px solid #5766f5;
+  border-radius: 1rem;
+  padding: 0.5rem 0rem;
+  cursor: pointer;
+}
+
+header button:hover {
+  background-color: #5766f5;
+  color: white;
+  transition: 0.2s;
+}
+
+@media only screen and (min-width: 950px) and (max-width: 1149px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 7rem;
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 949px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 699px) {
+  header {
+    display: grid;
+    grid-template-columns: 5rem 1fr 5rem;
+    justify-items: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    gap: 1rem;
+  }
+
+  header .navbar {
+    position: absolute;
+    background-color: #5766f5;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    top: 11%;
+    left: -100%;
+    gap: 0rem;
+    transition: all 0.5s;
+  }
+
+  header .navbar a {
+    padding: 1rem 0rem;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+  }
+
+  header .navbar a:hover {
+    background-color: #384af1;
+    color: white;
+    transition: 0.5s;
+  }
+
+  header .checkbtn {
+    font-size: 2rem;
+    color: #a6a6a6;
+    display: block;
+  }
+
+  header #check:checked ~ div {
+    top: 11%;
+    left: 0%;
+  }
+}
