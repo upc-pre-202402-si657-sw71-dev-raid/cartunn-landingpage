@@ -259,3 +259,43 @@ header button:hover {
   background-color: #384af1;
   transition: 0.2s;
 }
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+  padding: 4rem 0rem;
+}
+
+footer {
+  background-color: #5766f5;
+  height: 6rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  justify-items: center;
+  align-items: center;
+  padding: 2rem 12rem;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  .welcome div {
+    width: 100%;
+    max-width: 20rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .band-strip {
+    padding: 1rem 5rem;
+  }
+
+  .contact {
+    padding: 4rem 12rem;
+  }
+
+  footer {
+    padding: 2rem 8rem;
+  }
+}
