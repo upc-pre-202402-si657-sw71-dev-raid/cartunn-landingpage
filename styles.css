@@ -204,7 +204,7 @@ header .button:hover {
   padding: 4rem 0rem;
 }
 
-.about-product {
+.about-product, .about-team {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -214,7 +214,7 @@ header .button:hover {
   text-align: center;
 }
 
-.video-product {
+.video-product, .video-team {
   width: 100%;
   max-width: 50rem;
   height: 30rem;
