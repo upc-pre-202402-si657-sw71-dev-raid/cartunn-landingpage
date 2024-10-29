@@ -26,7 +26,7 @@
     <link rel="shortcut icon" href="images/CT.svg" type="image/x-icon" />
     <title>CarTunn</title>
   </head>
-  <body>
+  <body class="dark">
     <header>
       <input type="checkbox" id="check" />
       <label for="check" class="checkbtn">
@@ -35,7 +35,7 @@
       <a href="index.html">
         <img src="images/CARTUNN-logo.svg" alt="CarTunn" />
       </a>
-      <div class="navbar">
+      <div class="navbar" id="drak">
         <a href="#product">Product</a>
         <a href="#costumers">Clients</a>
         <a href="#pricing">Plans</a>
@@ -62,21 +62,23 @@
           Open app
         </a>
         <a
-          href="https://nickdavid1811.github.io/Cartunn-landing_page_spanish/"
-          target="_self"
-          style="
-            background-color: #5766f5;
-            text-decoration: none;
-            width: 100%;
-            max-width: 1.5rem;
-            color: white;
-            text-align: center;
-            padding: 0.3rem;
-            margin: 0rem;
-          "
-        >
-          ES
-        </a>
+        href="https://nickdavid1811.github.io/Cartunn-landing_page_spanish/"
+        target="_self"
+        style="
+          background-color: #5766f5;
+          text-decoration: none;
+          width: 100%;
+          max-width: 1.5rem;
+          color: white;
+          text-align: center;
+          padding: 0.3rem;
+          margin: 0rem;
+        "
+      >
+        ES
+      </a>      
+        <label for="toggle" id="label_toggle"><i class="fa-solid fa-sun"></i></label>
+        <input type="checkbox" id="toggle">
       </div>
     </header>
     <section class="welcome">
@@ -464,5 +466,6 @@
         </a>
       </div>
     </footer>
+    <script src="app.js"> </script>  
   </body>
 </html>

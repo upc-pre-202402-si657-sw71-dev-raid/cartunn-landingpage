@@ -5,6 +5,106 @@ body {
   margin: 0px;
 }
 
+/* Modo oscuro */
+.dark {
+  background-color: #333;
+  color: white;
+}
+
+/* Texto general en modo oscuro */
+.dark header,
+.dark header .navbar a,
+.dark header .button,
+.dark .welcome div,
+.dark .welcome div button,
+.dark .band-strip,
+.dark .experience-info,
+.dark .experience-info div,
+.dark .product div .item,
+.dark .costumers div img,
+.dark .pricing,
+.dark .pricing form input,
+.dark .pricing form button,
+.dark .contact,
+.dark .about-product,
+.dark .about-team,
+.dark footer,
+.dark h1,
+.dark h2,
+.dark h3,
+.dark p,
+.dark span,
+.dark a,
+.dark .review,
+.dark .quote,
+.dark .contact-info {
+  color: white;
+}
+
+
+/* Botones en modo oscuro */
+.dark header .button {
+  background-color: #333;
+  color: white;
+  border: 1px solid white;
+}
+
+.dark header .button:hover {
+  background-color: white;
+  color: #333;
+}
+
+/* Enlaces en el navbar en modo oscuro */
+.dark header .navbar a {
+  color: white;
+}
+
+.dark header .navbar a:hover {
+  color: #cccccc;
+}
+
+/* Botones de la sección welcome en modo oscuro */
+.dark .welcome div button {
+  background-color: #444;
+  color: white;
+}
+
+.dark .welcome div button:hover {
+  background-color: #555;
+}
+
+/* Band strip en modo oscuro */
+.dark .band-strip {
+  background-color: #444;
+  color: white;
+}
+
+/* Formularios de pricing en modo oscuro */
+.dark .pricing form input {
+  background-color: #444;
+  color: white;
+  border: 1px solid #777;
+}
+
+.dark .pricing form input::placeholder {
+  color: #cccccc;
+}
+
+.dark .pricing form button {
+  background-color: #444;
+  color: white;
+}
+
+.dark .pricing form button:hover {
+  background-color: #555;
+}
+
+/* Pie de página en modo oscuro */
+.dark footer {
+  background-color: #222;
+  color: white;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -84,6 +184,7 @@ header .button:hover {
   cursor: pointer;
   border: none;
 }
+
 .welcome div button:hover {
   background-color: #384af1;
   transition: 0.2s;
@@ -126,6 +227,7 @@ header .button:hover {
   align-items: center;
   gap: 1rem;
 }
+
 .product div .item {
   width: 100%;
   max-width: 16rem;
@@ -167,6 +269,7 @@ header .button:hover {
   width: 100%;
   gap: 1rem;
 }
+
 .pricing form input {
   width: 20rem;
 }
@@ -191,6 +294,7 @@ header .button:hover {
   cursor: pointer;
   border: none;
 }
+
 .pricing div button:hover {
   background-color: #384af1;
   transition: 0.2s;
@@ -229,6 +333,23 @@ footer {
   align-items: center;
   padding: 2rem 12rem;
 }
+
+#toggle {
+  display: none;
+}
+
+#label_toggle {
+  top: 10px;
+  right: 10px;
+  font-size: 2em;
+  color: rebeccapurple;
+  cursor: pointer;
+}
+
+
+
+
+
 
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
   .welcome div {
@@ -586,4 +707,7 @@ footer {
     gap: 1rem;
     padding: 2rem 2rem;
   }
+
+
+  
 }
